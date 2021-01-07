@@ -1,17 +1,23 @@
-.head {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
 .topnav {
     overflow: hidden;
-    background-color: #424242;
+    background-color: #161616;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .topnav a {
     float: left;
-    color: #e53838;
+    color: #ffffff;
+    padding: 12px 12px;
     text-align: center;
-    padding-left: 48px;
     text-decoration: none;
-    font-size: 20px
+    font-size: 20px;
+}
+
+.topnav a.active {
+    background-color: #ffffff;
+    color: #e53838;
+}
+.topnav a:hover {
+    background-color: #e53838;
+    color: #ffffff;
 }
