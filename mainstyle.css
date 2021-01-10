@@ -28,6 +28,10 @@ body {
     color: #ffffff;
 }
 
+span {
+    font-weight: bold;
+}
+
 .footer { 
     bottom: 0;
     left: 0;
