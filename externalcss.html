@@ -22,9 +22,9 @@
 
 <div class="gallery">
     <a target="_blank" href="external.PNG">
-        <img src="external.PNG" alt="InlineCSSExample" width="552px" height="761px">
+        <img src="external.PNG" alt="ExternalCSSExample" width="552px" height="761px">
     </a>
-    <div class="desc">Figure 1 - External CSS file within the workspace</div>
+    <div class="desc">Figure 1 - External CSS file contents</div>
     <style>
         
         div.desc {
@@ -44,11 +44,35 @@
     </style>
 </div>
 
+<div class="gallery">
+    <a target="_blank" href="external2.PNG">
+        <img src="external2.PNG" alt="ExternalCSSExample" width="370px" height="101px">
+    </a>
+    <div class="desc">Figure 2 - External CSS file being linked within header</div>
+    <style>
+        
+        div.desc {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-style: oblique;
+        }
+
+        div.gallery {
+            border: 1px solid #ffffff;
+            width: 370px;
+            position: relative;
+            float: right;
+            top: -50px;
+            margin: 25px;
+        }
+
+    </style>
+</div>
+
 <p>
     External CSS involves writing characteristics for certain objects in another file,
-    specifically made for CSS styling. This file is then linked to HTML documents which
-    get their object design from the CSS File. External CSS is particularly useful when
-    a website with many HTML pages wants to use the same stylization across multiple
+    specifically made for CSS styling. This file is then linked to HTML documents within 
+    the header tag which get their object design from the CSS File. External CSS is particularly 
+    useful when a website with many HTML pages wants to use the same stylization across multiple
     pages.
 </p>
 
