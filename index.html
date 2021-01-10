@@ -15,8 +15,40 @@
 
 <body>
     <h1 style="margin-top: 5px;">Cascading Style Sheets</h1>
+
     <h2 style="margin-top: -20px;">Client-Side Customisation of Web Pages</h2>
-    <p></p>    
+
+    <h3>CSS Box Model</h3>
+
+    <p style="width:60%;">The CSS Box Model is a structure
+        which includes a few properties which help segment and design how a website is layed out. 
+        These elements are the content of the website, the padding of the content, the margin of the 
+        padding and finally the borders of the margins. The box model resembles how these elements are in relation to 
+        one another, in the form of rectangular boxes. (https://www.geeksforgeeks.org/css-box-model/)
+    </p>   
+
+    <div class="gallery">
+        <a target="_blank" href="cssbox.png">
+            <img src="cssbox.png" alt="InlineCSSExample" width="640px" height="360px">
+        </a>
+        <div class="desc">Figure 1 - My interpretation of the CSS Box model</div>
+        <style>
+            
+            div.desc {
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-style: oblique;
+            }
+    
+            div.gallery {
+                border: 1px solid #ffffff;
+                width: 640px;
+                position: relative;
+                margin: 5px;
+            }
+    
+        </style>
+    </div>
+
 </body>
 
 <div class="footer">
