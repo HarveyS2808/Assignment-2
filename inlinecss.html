@@ -4,59 +4,66 @@
         <link rel="stylesheet" href="mainstyle.css">
         <title>Inline CSS</title>
     </head>
+    <body>
+        <div class="topnav">
+            <a href="index.html"><Main>Home</Main></a>
+            <a class="active" href="inlinecss.html">Inline CSS</a>
+            <a href="embeddedcss.html">Embedded CSS</a>
+            <a href="externalcss.html">External CSS</a>
+        </div>
+    
+        <h1>Inline CSS</h1>
+    
+        <p style="width: 45%;">One way of accessing CSS for a HTML website is by writing it on the same
+        line as the item you want to edit, such as a paragraph or header. Inline CSS is particularly 
+        useful for altering how a single object looks on a website. A practical example would be
+        this paragraph as example as it has a personal width of 40%, which makes it stay to the left side of the page. 
+        </p>
+    
+        <div class="gallery">
+            <a target="_blank" href="inlinecss.jpg">
+                <img src="inlinecss.jpg" alt="InlineCSSExample" width="910px" height="137px">
+            </a>
+            <div class="desc">Figure 1 - Inline CSS in a paragraph</div>
+            <style>
+            
+                div.desc {
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-style: oblique;
+                }
+    
+                div.gallery {
+                border: 1px solid #ffffff;
+                width: 910px;
+                margin: 5px;
+                }
+    
+            </style>
+        </div>
+    
+        <p style="width: 45%;">To declare inline CSS, the style should be declared within the opening
+        bracket of the item, whether it be a footer or a paragraph. Figure 1 is an example of me creating
+        this for these paragraphs, where I have declared their width as 40%. Inline CSS overrules other types
+        of CSS, as it is specific to the object it is declared to.
+        </p>
+    
+        <h2>The Pros and Cons of Inline CSS</h2>
+    
+        <p style="width: 80%;">
+            The main advantages that the inline implementation method comes from the fact it can stylize different objects
+            within the opening tag, which allows them to both differ from other objects of the same tag, and also removes the need
+            for CSS on another file. This can save space, and allows for easy editing, without the risk of changing other elements.
+            Another advantage of inline CSS is that it can immediately put into the tag; there is no need for an external CSS file
+            or a tag within the header. This once again makes it very easy to implement.
+        </p>
+    
+        <p style="width: 80%;">
+    
+        </p>
+    
+        <div class="footer">
+            <p>Harvey Shipp | 426573@edu.cwa.ac.uk</p>
+        </div>
 
-
-    <div class="topnav">
-        <a href="index.html"><Main>Home</Main></a>
-        <a class="active" href="inlinecss.html">Inline CSS</a>
-        <a href="embeddedcss.html">Embedded CSS</a>
-        <a href="externalcss.html">External CSS</a>
-    </div>
-
-    <h1>Inline CSS</h1>
-
-    <p style="width: 45%;">One way of accessing CSS for a HTML website is by writing it on the same
-    line as the item you want to edit, such as a paragraph or header. Inline CSS is particularly 
-    useful for altering how a single object looks on a website. A practical example would be
-    this paragraph as example as it has a personal width of 40%, which makes it stay to the left side of the page. 
-    </p>
-
-    <div class="gallery">
-        <a target="_blank" href="inlinecss.jpg">
-            <img src="inlinecss.jpg" alt="InlineCSSExample" width="910px" height="137px">
-        </a>
-        <div class="desc">Figure 1 - Inline CSS in a paragraph</div>
-        <style>
-        
-            div.desc {
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            font-style: oblique;
-            }
-
-            div.gallery {
-            border: 1px solid #ffffff;
-            width: 910px;
-            margin: 5px;
-            }
-
-        </style>
-    </div>
-
-    <p style="width: 45%;">To declare inline CSS, the style should be declared within the opening
-    bracket of the item, whether it be a footer or a paragraph. Figure 1 is an example of me creating
-    this for these paragraphs, where I have declared their width as 40%. Inline CSS overrules other types
-    of CSS, as it is specific to the object it is declared to.
-    </p>
-
-    <h2>The Pros and Cons of Inline CSS</h2>
-
-    <p>
-        The main advantages that the inline implementation method comes from the fact it can stylize different objects
-        within the opening tag, which allows them to both differ from other objects of the same tag, and also removes the need
-        for CSS on another file. This can save space, and allows for easy editing, without the risk of changing other elements.
-    </p>
-
-    <div class="footer">
-        <p>Harvey Shipp | 426573@edu.cwa.ac.uk</p>
-    </div>
+    </body>
 </html>
