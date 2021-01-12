@@ -3,11 +3,41 @@
     <head>
     <link rel="stylesheet" href="mainstyle.css">
     <title>External CSS</title>
-    <style>
-        p {
-            width: 65%;
-        }
+        <style>
+            
+            p  {
+                width: 65%;
+            }
+
+            div.desc {
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-style: oblique;
+            }
+    
+            div.gallery {
+                border: 1px solid #ffffff;
+                width: 552px;
+                position: relative;
+                float: right;
+                top: -70px;
+                margin: 25px;
+            }
+
+            div.desc2 {
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-style: oblique;
+            }
+    
+            div.gallery2 {
+                border: 1px solid #ffffff;
+                width: 370px;
+                position: relative;
+                float: right;
+                top: -50px;
+                margin: 25px;
+            }
         </style>
+
     </head>
     <body>
         <div class="topnav">
@@ -25,47 +55,13 @@
                 <img src="external.PNG" alt="ExternalCSSExample" width="552" height="761">
             </a>
         <div class="desc">Figure 1 - External CSS file contents</div>
-        <style external1>
-            
-            div.desc {
-                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-                font-style: oblique;
-            }
-    
-            div.gallery {
-                border: 1px solid #ffffff;
-                width: 552px;
-                position: relative;
-                float: right;
-                top: -70px;
-                margin: 25px;
-            }
-    
-        </style>
         </div>
     
-        <div class="gallery">
+        <div class="gallery2">
             <a target="_blank" href="external2.PNG">
                 <img src="external2.PNG" alt="ExternalCSSExample" width="370" height="101">
             </a>
-            <div class="desc">Figure 2 - External CSS file being linked within header</div>
-            <style external>
-            
-                div.desc {
-                    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-                    font-style: oblique;
-                }
-    
-                div.gallery {
-                    border: 1px solid #ffffff;
-                    width: 370px;
-                    position: relative;
-                    float: right;
-                    top: -50px;
-                    margin: 25px;
-                }
-    
-            </style>
+            <div class="desc2">Figure 2 - External CSS file being linked within header</div>
         </div>
     
         <p>
