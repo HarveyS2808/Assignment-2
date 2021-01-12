@@ -10,83 +10,99 @@
         </style>
     </head>
     <body>
-
-
-    <div class="topnav">
-        <a href="index.html"><Main>Home</Main></a>
-        <a href="inlinecss.html">Inline CSS</a>
-        <a href="embeddedcss.html">Embedded CSS</a>
-        <a class="active" href="externalcss.html">External CSS</a>
-    </div class ="topnav">
-
-    <h1>External CSS</h1>
-
-    <div class="gallery">
-        <a target="_blank" href="external.PNG">
-            <img src="external.PNG" alt="ExternalCSSExample" width="552px" height="761px">
-        </a>
-    <div class="desc">Figure 1 - External CSS file contents</div>
-    <style>
-        
-        div.desc {
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            font-style: oblique;
-        }
-
-        div.gallery {
-            border: 1px solid #ffffff;
-            width: 552px;
-            position: relative;
-            float: right;
-            top: -70px;
-            margin: 25px;
-        }
-
-    </style>
-    </div>
-
-    <div class="gallery">
-        <a target="_blank" href="external2.PNG">
-            <img src="external2.PNG" alt="ExternalCSSExample" width="370px" height="101px">
-        </a>
-        <div class="desc">Figure 2 - External CSS file being linked within header</div>
+        <div class="topnav">
+            <a href="index.html"><Main>Home</Main></a>
+            <a href="inlinecss.html">Inline CSS</a>
+            <a href="embeddedcss.html">Embedded CSS</a>
+            <a class="active" href="externalcss.html">External CSS</a>
+        </div class ="topnav">
+    
+        <h1>External CSS</h1>
+    
+        <div class="gallery">
+            <a target="_blank" href="external.PNG">
+                <img src="external.PNG" alt="ExternalCSSExample" width="552px" height="761px">
+            </a>
+        <div class="desc">Figure 1 - External CSS file contents</div>
         <style>
-        
+            
             div.desc {
                 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
                 font-style: oblique;
             }
-
+    
             div.gallery {
                 border: 1px solid #ffffff;
-                width: 370px;
+                width: 552px;
                 position: relative;
                 float: right;
-                top: -50px;
+                top: -70px;
                 margin: 25px;
             }
-
+    
         </style>
-    </div>
-
-    <p>
-        External CSS involves writing characteristics for certain objects in another file,
-        specifically made for CSS styling. This file is then linked to HTML documents within 
-        the header tag which get their object design from the CSS File. External CSS is particularly 
-        useful when a website with many HTML pages wants to use the same stylization across multiple
-        pages.
-    </p>
-
-    <p>
-        In figure 1, you can see where I have used an external CSS file to change the characteristics
-        of the navigation bar, the footer, and the body of the HTML files within this website. This 
-        is convienient for keeping the website professional, and also saving a lot of time and space
-        by only using the code once, then accessing it from different files.
-    </p>    
-
-    <div class="footer">
-       <p>Harvey Shipp | 426573@edu.cwa.ac.uk</p>
-    </div>
-
+        </div>
+    
+        <div class="gallery">
+            <a target="_blank" href="external2.PNG">
+                <img src="external2.PNG" alt="ExternalCSSExample" width="370px" height="101px">
+            </a>
+            <div class="desc">Figure 2 - External CSS file being linked within header</div>
+            <style>
+            
+                div.desc {
+                    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    font-style: oblique;
+                }
+    
+                div.gallery {
+                    border: 1px solid #ffffff;
+                    width: 370px;
+                    position: relative;
+                    float: right;
+                    top: -50px;
+                    margin: 25px;
+                }
+    
+            </style>
+        </div>
+    
+        <p>
+            External CSS involves writing characteristics for certain objects in another file,
+            specifically made for CSS styling. This file is then linked to HTML documents within 
+            the header tag which get their object design from the CSS File. External CSS is particularly 
+            useful when a website with many HTML pages wants to use the same stylization across multiple
+            pages.
+        </p>
+    
+        <p>
+            In figure 1, you can see where I have used an external CSS file to change the characteristics
+            of the navigation bar, the footer, and the body of the HTML files within this website. This 
+            is convienient for keeping the website professional, and also saving a lot of time and space
+            by only using the code once, then accessing it from different files.
+        </p>    
+    
+        <h2>The Pros and Cons of Embedded CSS</h2>
+        
+            <p style="width: 80%;">
+                Embedded is very useful in creating CSS for HTML documents. Its main strength is changing
+                properties for a certain type of tag, such as a paragraph or a div. 
+                This is quite efficient as it removes the need for inline CSS.
+                Another advantage of embedded CSS is that it removes the need for external CSS files. 
+                It can also save space on external CSS files if a certain HTML page uses stylizations
+                or objects that the rest of the website doesn't.
+            </p>
+        
+            <p style="width: 80%;">
+                When it comes to the disadvantages of embedded CSS, its biggest drawback is that it is limited
+                to one page. This means that if you want to keep these styles throughout all the HTML pages,
+                they need to be repeated in each one of them. This could then lead to an issue with the second
+                disadvantage, which is the slow loading times. Because all the CSS is within the HTML file in the
+                header, embedded CSS can cause slower loading times.
+            </p>
+    
+        <div class="footer">
+           <p>Harvey Shipp | 426573@edu.cwa.ac.uk</p>
+        </div>
     </body>
 </html>
