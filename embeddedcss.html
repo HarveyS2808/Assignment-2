@@ -1,62 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="mainstyle.css">
-    <title>Embedded CSS</title>
-    <style>
+    <head>
+        <link rel="stylesheet" href="mainstyle.css">
+        <title>Embedded CSS</title>
+        <style>
 
-    p {
-        width: 45%;
-    }
+        p {
+            width: 45%;
+        }
 
-    </style>
-</head>
-</html>
-
-<div class="topnav">
-    <a href="index.html"><Main>Home</Main></a>
-    <a href="inlinecss.html">Inline CSS</a>
-    <a class="active" href="embeddedcss.html">Embedded CSS</a>
-    <a href="externalcss.html">External CSS</a>
-</div>
-
-<h1>Embedded CSS</h1>
-
-<p> 
-    Embedded CSS is another way you can access CSS within a HTML document. Embedded CSS is typically used
-    to make a single HTML file stylized in a different way to the rest of a document. Rather than being within
-    a tag of a specifc object like inline CSS, Embedded CSS is declared within a style tag, in the header tag.
-    These styilzations then apply to every single instance of that object in the HTML document, but are overruled
-    if any inline CSS is present for individual objects.
-</p>
-
-<p>
-    A practical example of embedded CSS, is that of the CSS that has been used in this document. For this example,
-    I've edited the width of both these paragraphs in the style tag in the header, by only declaring it once.
-    This can been seen in figure 1.
-</p>
-
-<div class="gallery">
-    <a target="_blank" href="embedded.PNG">
-        <img src="embedded.PNG" alt="InlineCSSExample" width="389px" height="272px">
-    </a>
-    <div class="desc">Figure 1 - Embedded CSS in the header tag</div>
-    <style>
+        </style>
+    </head>
+    <body>
+        <div class="topnav">
+            <a href="index.html"><Main>Home</Main></a>
+            <a href="inlinecss.html">Inline CSS</a>
+            <a class="active" href="embeddedcss.html">Embedded CSS</a>
+            <a href="externalcss.html">External CSS</a>
+        </div>
         
-        div.desc {
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            font-style: oblique;
-        }
+        <h1>Embedded CSS</h1>
+        
+        <p> 
+            Embedded CSS is another way you can access CSS within a HTML document. Embedded CSS is typically used
+            to make a single HTML file stylized in a different way to the rest of a document. Rather than being within
+            a tag of a specifc object like inline CSS, Embedded CSS is declared within a style tag, in the header tag.
+            These styilzations then apply to every single instance of that object in the HTML document, but are overruled
+            if any inline CSS is present for individual objects.
+        </p>
+        
+        <p>
+            A practical example of embedded CSS, is that of the CSS that has been used in this document. For this example,
+            I've edited the width of both these paragraphs in the style tag in the header, by only declaring it once.
+            This can been seen in figure 1.
+        </p>
+        
+        <div class="gallery">
+            <a target="_blank" href="embedded.PNG">
+                <img src="embedded.PNG" alt="InlineCSSExample" width="389px" height="272px">
+            </a>
+            <div class="desc">Figure 1 - Embedded CSS in the header tag</div>
+            <style>
+                
+                div.desc {
+                    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    font-style: oblique;
+                }
+        
+                div.gallery {
+                    border: 1px solid #ffffff;
+                    width: 389px;
+                    position: relative;
+                }
+        
+            </style>
+        </div>
 
-        div.gallery {
-            border: 1px solid #ffffff;
-            width: 389px;
-            position: relative;
-        }
-
-    </style>
-</div>
-
-<div class="footer">
-    <p>Harvey Shipp | 426573@edu.cwa.ac.uk</p>
-</div>
+        <h2>The Pros and Cons of Embedded CSS</h2>
+    
+        <p style="width: 80%;">
+            Embedded is very useful in creating CSS for HTML documents. Its main strength is changing
+            properties for a certain type of tag, such as a paragraph or a div. 
+            This is quite efficient as it removes the need for inline CSS.
+            Another advantage of embedded CSS is that it removes the need for external CSS files. 
+            It can also save space on external CSS files if a certain HTML page uses stylizations
+            or objects that the rest of the website doesn't.
+        </p>
+    
+        <p style="width: 80%;">
+            When it comes to the disadvantages of embedded CSS, its biggest drawback is that it is limited
+            to one page. This means that if you want to keep these styles throughout all the HTML pages,
+            they need to be repeated in each one of them. This could then lead to an issue with the second
+            disadvantage, which is the slow loading times. Because all the CSS is within the HTML file in the
+            header, embedded CSS can cause slower loading times.
+        </p>
+        
+        <div class="footer">
+            <p>Harvey Shipp | 426573@edu.cwa.ac.uk</p>
+        </div>
+    </body>
+</html>
