@@ -82,23 +82,23 @@
             by only using the code once, then accessing it from different files.
         </p>    
     
-        <h2>The Pros and Cons of Embedded CSS</h2>
+        <h2>The Pros and Cons of External CSS</h2>
         
             <p style="width: 80%;">
-                Embedded is very useful in creating CSS for HTML documents. Its main strength is changing
-                properties for a certain type of tag, such as a paragraph or a div. 
-                This is quite efficient as it removes the need for inline CSS.
-                Another advantage of embedded CSS is that it removes the need for external CSS files. 
-                It can also save space on external CSS files if a certain HTML page uses stylizations
-                or objects that the rest of the website doesn't.
+                External CSS's efficiency derives from the fact it uses a seperate file to store CSS.
+                In face, the biggest advantage of external CSS is the fact that the CSS can be reused
+                multiple times, depending on how many HTML pages are linked to it. They also change the
+                stylization of multiple tags within one line, as all objects on the HTML refer to the external
+                file's CSS. This makes it very quick and efficient to stylise code, and saves a lot of space
+                and loading time on the HTML pages.
             </p>
         
             <p style="width: 80%;">
-                When it comes to the disadvantages of embedded CSS, its biggest drawback is that it is limited
-                to one page. This means that if you want to keep these styles throughout all the HTML pages,
-                they need to be repeated in each one of them. This could then lead to an issue with the second
-                disadvantage, which is the slow loading times. Because all the CSS is within the HTML file in the
-                header, embedded CSS can cause slower loading times.
+                The external implementation method does not come without negatives though. As it is often used in
+                multiple pages, it will need the CSS content of every object in those pages. This can make it
+                difficult to change individual elements of pages, and if this is done externally those stylisations
+                are also linked to other pages, which can slow down the loading times of the entire website. This
+                can include the page not initially rendering correctly, and also affect the download time.
             </p>
     
         <div class="footer">
