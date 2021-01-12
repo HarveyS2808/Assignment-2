@@ -1,111 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <head>
     <link rel="stylesheet" href="mainstyle.css">
     <title>Assignment 2</title>
-    <style>
+        <style>
 
         p {
             width: 45%;
-        }
+         }
     
         </style>
-</head>
-</html>
-
-<div class="topnav">
-    <a class="active" href="index.html"><Main>Home</Main></a>
-    <a href="inlinecss.html">Inline CSS</a>
-    <a href="embeddedcss.html">Embedded CSS</a>
-    <a href="externalcss.html">External CSS</a>
-</div>
-
-<body>
-    <h1 style="margin-top: 5px;">Cascading Style Sheets</h1>
-
-    <h2 style="margin-top: -20px;">Client-Side Customisation of Web Pages</h2>
-
-    <h3 style="text-align: center;">CSS Box Model</h3>
-
-    <p>The CSS Box Model is a structure
-        which includes a few properties which help segment and design how a website is layed out. 
-        These elements are the content of the website, the padding of the content, the margin of the 
-        padding and finally the borders of the margins. The box model resembles how these elements are in relation to 
-        one another, in the form of rectangular boxes. (https://www.geeksforgeeks.org/css-box-model/)
-    </p>   
-
-    <div class="gallery">
-        <a target="_blank" href="cssbox.png">
-            <img src="cssbox.png" alt="InlineCSSExample" width="640px" height="360px">
-        </a>
-        <div class="desc">Figure 1 - My interpretation of the CSS Box model,
-            based on that from GeeksForGeeks,2018.
+    </head>
+    <body>
+        <div class="topnav">
+            <a class="active" href="index.html"><Main>Home</Main></a>
+            <a href="inlinecss.html">Inline CSS</a>
+            <a href="embeddedcss.html">Embedded CSS</a>
+            <a href="externalcss.html">External CSS</a>
+            <a href="references.html">References used</a>
         </div>
-        <style>
+        
+        
+        <h1 style="margin-top: 5px;">Cascading Style Sheets</h1>
+        
+        <h2 style="margin-top: -20px;">Client-Side Customisation of Web Pages</h2>
+        
+        <h3 style="text-align: center;">CSS Box Model</h3>
+        
+        <p>The CSS Box Model is a structure
+            which includes a few properties which help segment and design how a website is layed out. 
+            These elements are the content of the website, the padding of the content, the margin of the 
+            padding and finally the borders of the margins. The box model resembles how these elements are in relation to 
+            one another, in the form of rectangular boxes. (https://www.geeksforgeeks.org/css-box-model/)
+        </p>   
+        
+        <div class="gallery">
+            <a target="_blank" href="cssbox.png">
+                <img src="cssbox.png" alt="InlineCSSExample" width="640px" height="360px">
+            </a>
+            <div class="desc">Figure 1 - My interpretation of the CSS Box model,
+                based on that from GeeksForGeeks,2018.
+            </div>
+            <style>
+                    
+                div.desc {
+                    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    font-style: oblique;
+                }
             
-            div.desc {
-                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-                font-style: oblique;
-            }
-    
-            div.gallery {
-                border: 1px solid #ffffff;
-                width: 640px;
-                position: relative;
-                margin: 5px;
-            }
+                div.gallery {
+                    border: 1px solid #ffffff;
+                    width: 640px;
+                    position: relative;
+                    margin: 5px;
+                }
+        
+                div.BoxContent {
+                    background-color: brown;
+                    color: white;
+                    width: 500px;
+                    text-align: center;
+                    padding: 50px;
+                    border: 20px solid green;
+                    margin-left: 25px;
+                }
+         
+            </style>
+        </div>
+        
+        <p>
+            Each element of the CSS box model has a purpose in web design, and I will
+            now go over the significance of each of them.
+        </p>   
+        
+        <p style="width: 90%;">
+            <span>Content</span> - The content of the CSS Box model is any detail on the website,
+            such as images, text, or any other media that the client is using the web page to view.
+        </p>
+        
+        <p style="width: 90%;">
+            <span>Padding</span> - Padding in a HTML file surrounds the content of of the file,
+            but is still within the border of the website. Like other components, the height and
+            width can be edited. The padding is often used to expand the size of the content, without
+            editing the scale of the content.
+        </p>
+        
+        <p style="width: 90%;">
+            <span>Margin</span> - The Margin section consists of the area between the border, and the margin,
+            which is on the outer-most part of the diagram. The margin is used to position content in relation to the 
+            edges of the tab the web page is open in. The margin can be utilized to ensure all essential content is on
+            the screen at once, such as a video player.
+        </p>
+        
+        <p style="width: 90%;">
+            <span>Border</span> - The border is inbetween the margin section and the padding section of a HTML file. It is
+            mostly used for wrapping the padding and content together, mostly for decorative purposes.
+        </p>
+        
+        <div class="BoxExample"><span>Box Model</span></div>
+        <div class="BoxContent">This text is the content section of this element. The red surrounding it
+            is a padding which has extended the background colour 150 pixels in every direction from the text.
+            The green border surrounding the padding and content is the border sector, This object has a left margin, so no matter
+            how much the web page is scaled, it will stay 50px from the left side.
+        </div>
+        
+        <div class="footer">
+            <p>Harvey Shipp | 426573@edu.cwa.ac.uk</p>
+        </div>
 
-            div.BoxContent {
-                background-color: brown;
-                color: white;
-                width: 500px;
-                text-align: center;
-                padding: 50px;
-                border: 20px solid green;
-                margin-left: 25px;
-            }
- 
-        </style>
-    </div>
-
-    <p>
-        Each element of the CSS box model has a purpose in web design, and I will
-        now go over the significance of each of them.
-    </p>   
-
-    <p style="width: 90%;">
-        <span>Content</span> - The content of the CSS Box model is any detail on the website,
-        such as images, text, or any other media that the client is using the web page to view.
-    </p>
-
-    <p style="width: 90%;">
-        <span>Padding</span> - Padding in a HTML file surrounds the content of of the file,
-        but is still within the border of the website. Like other components, the height and
-        width can be edited. The padding is often used to expand the size of the content, without
-        editing the scale of the content.
-    </p>
-
-    <p style="width: 90%;">
-        <span>Margin</span> - The Margin section consists of the area between the border, and the margin,
-        which is on the outer-most part of the diagram. The margin is used to position content in relation to the 
-        edges of the tab the web page is open in. The margin can be utilized to ensure all essential content is on
-        the screen at once, such as a video player.
-    </p>
-
-    <p style="width: 90%;">
-        <span>Border</span> - The border is inbetween the margin section and the padding section of a HTML file. It is
-        mostly used for wrapping the padding and content together, mostly for decorative purposes.
-    </p>
-
-    <div class="BoxExample"><span>Box Model</span></div>
-    <div class="BoxContent">This text is the content section of this element. The red surrounding it
-        is a padding which has extended the background colour 150 pixels in every direction from the text.
-        The green border surrounding the padding and content is the border sector, This object has a left margin, so no matter
-        how much the web page is scaled, it will stay 50px from the left side.
-    </div>
-
-</body>
-
-<div class="footer">
-    <p>Harvey Shipp | 426573@edu.cwa.ac.uk</p>
-</div>
+    </body>
+</html>
