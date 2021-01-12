@@ -16,8 +16,11 @@
 .topnav a.active {
     background-color: #ffffff;
     color: #e53838;
+    transition: 1s;
 }
+
 .topnav a:hover {
+    transition: 1s;
     background-color: #e53838;
     color: #ffffff;
 }

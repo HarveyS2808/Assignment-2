@@ -31,7 +31,7 @@
             which includes a few properties which help segment and design how a website is layed out. 
             These elements are the content of the website, the padding of the content, the margin of the 
             padding and finally the borders of the margins. The box model resembles how these elements are in relation to 
-            one another, in the form of rectangular boxes. (https://www.geeksforgeeks.org/css-box-model/)
+            one another, in the form of rectangular boxes. 
         </p>   
         
         <div class="gallery">
@@ -63,12 +63,18 @@
                     padding: 50px;
                     border: 20px solid green;
                     margin-left: 25px;
+                    transition: 2s;
+                }
+
+                div.BoxContent:hover {
+                    padding-left: 250px;
+                    padding-right: 250px;
                 }
          
             </style>
         </div>
         
-        <p>
+        <p style="width: 90%;">
             Each element of the CSS box model has a purpose in web design, and I will
             now go over the significance of each of them.
         </p>   
@@ -97,7 +103,7 @@
             mostly used for wrapping the padding and content together, mostly for decorative purposes.
         </p>
         
-        <div class="BoxExample"><span>Box Model</span></div>
+        <div class="BoxExample"><span>Box Model</span> (Hover to expand)</div>
         <div class="BoxContent">This text is the content section of this element. The red surrounding it
             is a padding which has extended the background colour 150 pixels in every direction from the text.
             The green border surrounding the padding and content is the border sector, This object has a left margin, so no matter
