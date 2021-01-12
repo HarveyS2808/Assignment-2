@@ -9,20 +9,6 @@
                 width: 65%;
             }
 
-            div.desc {
-                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-                font-style: oblique;
-            }
-    
-            div.gallery {
-                border: 1px solid #ffffff;
-                width: 552px;
-                position: relative;
-                float: right;
-                top: -70px;
-                margin: 25px;
-            }
-
             div.desc2 {
                 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
                 font-style: oblique;
@@ -50,18 +36,11 @@
     
         <h1>External CSS</h1>
     
-        <div class="gallery">
-            <a target="_blank" href="external.PNG">
-                <img src="external.PNG" alt="ExternalCSSExample" width="552" height="761">
-            </a>
-        <div class="desc">Figure 1 - External CSS file contents</div>
-        </div>
-    
         <div class="gallery2">
             <a target="_blank" href="external2.PNG">
                 <img src="external2.PNG" alt="ExternalCSSExample" width="370" height="101">
             </a>
-            <div class="desc2">Figure 2 - External CSS file being linked within header</div>
+            <div class="desc2">Figure 1 - External CSS file being linked within header</div>
         </div>
     
         <p>
@@ -73,10 +52,19 @@
         </p>
     
         <p>
-            In figure 1, you can see where I have used an external CSS file to change the characteristics
-            of the navigation bar, the footer, and the body of the HTML files within this website. This 
-            is convienient for keeping the website professional, and also saving a lot of time and space
-            by only using the code once, then accessing it from different files.
+            For example, external CSS is being used within this HTML page to give the footer the colours
+            and transition it has. I have done this by using the class "topnav" within each HTML so I can
+            alter the way it looks in all of them, which makes the code efficient and clean. Here is the code
+            for making the inactive tabs red when they are hovered over.<br>
+            <br>
+            .topnav a:hover {<br>
+                transition: 1s;<br>
+                background-color: #e53838;<br>
+                color: #ffffff;<br>
+            }<br>
+            <br>
+            You can see from this that even though the code for the transition is not within this HTML file,
+            it still is used as it is on the CSS page linked within the head tag.
         </p>    
     
         <h2>The Pros and Cons of External CSS</h2>
