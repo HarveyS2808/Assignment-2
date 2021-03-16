@@ -9,6 +9,12 @@
             width: 45%;
         }
 
+        p::first-letter{
+            color: brown;
+            font-size: 150%;
+        }
+
+
         div.desc {
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             font-style: oblique;
@@ -16,9 +22,9 @@
             
         div.gallery {
             border: 1px solid #ffffff;
-            width: 640px;
             position: relative;
             margin: 5px;
+            width: 360px
         }
         
         div.BoxContent {
@@ -62,7 +68,7 @@
             one another, in the form of rectangular boxes. 
         </p>   
         
-        <div class="gallery">
+        <div class="gallery" style="width: 640px">
             <a target="_blank" href="cssbox.png">
                 <img src="cssbox.png" alt="InlineCSSExample" width="640" height="360">
             </a>
@@ -114,14 +120,37 @@
                 <a target="_blank" href="simpleselect.JPG">
                     <img src="simpleselect.JPG" alt="SimpleSelectorExample" width="227" height="123">
                 </a>
-                <div class="desc">Figure 2 - Example of a simple selector being used to animate the header.
+                <div class="desc">Figure 2 - Example of a simple selector.
                 </div>
             </div>
             <br>
             <span>Combinator selectors</span> - Combinator selectors function slightly differently from simple selectors as
             they select elements depending on how they relate to each other. An example of a combinator selector would be selecting all elements
             which are inside another certain element, or elements that follow another element. I have used a combinator selector to make all of
-            the galleries within this section have red borders.
+            the galleries within this section have red text.<br>
+            <div class="gallery">
+                <a target="_blank" href="comboselect.JPG">
+                    <img src="comboselect.JPG" alt="CombinatorSelectorExample" width="163" height="66">
+                </a>
+                <div class="desc">Figure 3 - Example of a combinator selector.
+                </div>
+            </div>
+            <br>
+            <span>Pseudo-Class selectors</span> - Pseudo-Class selectors refer to a state of a class which is different to the usual. For example,
+            This could be when a mouse is hovered over a specific element or whether a link has been visited or not. In this website, I have used
+            Pseudo-Class selectors for multiple elements and states, but the best example is that of the box which expands when you hover over it. <br>
+            <div class="gallery">
+                <a target="_blank" href="pseudoclass.JPG">
+                    <img src="pseudoclass.JPG" alt="PseudoClassSelectorExample" width="228" height="102">
+                </a>
+                <div class="desc">Figure 4 - Example of a pseudo-class selector.
+                </div>
+            </div>
+            <br>
+            <span>Pseudo-Elements selectors</span> - Pseudo-Elements allow you to alter a specific part of an elements within a HTML file. This can include
+            certain segments of text, or content to precede or follow text, or other content of an element. This can be useful to bring attention to a specific
+            reference within an element, or simply stylise a page better. For example, a Pseudo-Element selector has been used to change the first letter of each paragraph
+            to a different colour and a larger size.
         </p>
 
         <div class="footer">
