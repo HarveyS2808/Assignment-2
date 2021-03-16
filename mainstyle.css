@@ -55,6 +55,10 @@ h1 {
     position: relative;
 }
 
+h3 {
+    text-align: center;
+}
+
 @keyframes opacity {
     from {opacity: 0; right: 500px;}
     to {opacity: 1; right: 0px;}
