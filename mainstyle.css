@@ -79,8 +79,12 @@ h4 ~ .gallery {
 }
 
 .selectors::first-letter {
-    color: brown;
+    color: red;
     font-size: 150%;
 }
 
-
+.selectors[target]:hover{
+    color: red;
+    font-family:Georgia, Times, 'Times New Roman', serif;
+    font-size: 120%;
+}
