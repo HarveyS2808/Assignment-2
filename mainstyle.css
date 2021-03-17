@@ -83,7 +83,7 @@ h4 ~ .gallery {
     font-size: 150%;
 }
 
-.selectors[target]:hover{
+a[href="index.html"]{
     color: red;
     font-family:Georgia, Times, 'Times New Roman', serif;
     font-size: 120%;
