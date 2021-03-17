@@ -9,12 +9,6 @@
             width: 45%;
         }
 
-        p::first-letter{
-            color: brown;
-            font-size: 150%;
-        }
-
-
         div.desc {
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             font-style: oblique;
@@ -107,12 +101,14 @@
         </div>
         
         <h4>CSS Selectors</h4>
-        <p style="width: 90%;">
+        <p class="selectors">
             CSS selections are used within CSS to highlight a certain portion of the HTML sheet and change how it looks, often done by
             selecting a certain type of class or element. However, there are many different selections which can
             let the designer set elements to selected depending on an event. These are split into 5 different types of selectors, the first 
-            being simple selectors.<br>
-            <br>
+            being simple selectors.
+        </p>
+
+        <p class="selectors">
             <span>Simple selectors</span> - Simple selectors get their name from the fact that they operate simply
             by selecting what the element or class is, for example, a paragraph or header. For example, the "Cascading Style Sheets"
             title of this page uses a simple CSS selector to make the element animated.<br>
@@ -120,10 +116,11 @@
                 <a target="_blank" href="simpleselect.JPG">
                     <img src="simpleselect.JPG" alt="SimpleSelectorExample" width="227" height="123">
                 </a>
-                <div class="desc">Figure 2 - Example of a simple selector.
-                </div>
+                <div class="desc">Figure 2 - Example of a simple selector.</div>
             </div>
-            <br>
+        </p>
+
+        <p class="selectors">
             <span>Combinator selectors</span> - Combinator selectors function slightly differently from simple selectors as
             they select elements depending on how they relate to each other. An example of a combinator selector would be selecting all elements
             which are inside another certain element, or elements that follow another element. I have used a combinator selector to make all of
@@ -132,10 +129,11 @@
                 <a target="_blank" href="comboselect.JPG">
                     <img src="comboselect.JPG" alt="CombinatorSelectorExample" width="163" height="66">
                 </a>
-                <div class="desc">Figure 3 - Example of a combinator selector.
-                </div>
+                <div class="desc">Figure 3 - Example of a combinator selector.</div>
             </div>
-            <br>
+        </p>
+
+        <p class="selectors">
             <span>Pseudo-Class selectors</span> - Pseudo-Class selectors refer to a state of a class which is different to the usual. For example,
             This could be when a mouse is hovered over a specific element or whether a link has been visited or not. In this website, I have used
             Pseudo-Class selectors for multiple elements and states, but the best example is that of the box which expands when you hover over it. <br>
@@ -143,14 +141,21 @@
                 <a target="_blank" href="pseudoclass.JPG">
                     <img src="pseudoclass.JPG" alt="PseudoClassSelectorExample" width="228" height="102">
                 </a>
-                <div class="desc">Figure 4 - Example of a pseudo-class selector.
-                </div>
+                <div class="desc">Figure 4 - Example of a pseudo-class selector.</div>
             </div>
-            <br>
+        </p>
+
+        <p class="selectors">
             <span>Pseudo-Elements selectors</span> - Pseudo-Elements allow you to alter a specific part of an elements within a HTML file. This can include
             certain segments of text, or content to precede or follow text, or other content of an element. This can be useful to bring attention to a specific
             reference within an element, or simply stylise a page better. For example, a Pseudo-Element selector has been used to change the first letter of each paragraph
             to a different colour and a larger size.
+            <div class="gallery">
+                <a target="_blank" href="pseudoelement.JPG">
+                    <img src="pseudoelement.JPG" alt="PseudoElementSelectorExample" width="247" height="105">
+                </a>
+                <div class="desc">Figure 5 - Example of a pseudo-element selector.</div>
+            </div>
         </p>
 
         <div class="footer">

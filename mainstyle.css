@@ -74,5 +74,13 @@ h4 ~ .gallery {
     color: red;
 }
 
+.selectors {
+    width: 90%
+}
+
+.selectors::first-letter {
+    color: brown;
+    font-size: 150%;
+}
 
 
